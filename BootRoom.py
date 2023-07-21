@@ -91,12 +91,13 @@ if uploaded_file is not None:
           st.altair_chart(chart, theme="streamlit", use_container_width=True)
 coach_message = st.chat_message(name="Coach Gus",avatar="./resources/profile_coachGus.JPG")
 coach_message.write("Lastly, let's look at max acceleration, max deceleration, and top speed for this game:")
-chart = alt.Chart(dataframe).mark_circle().encode(
-     x='Max Acceleration (m/s/s)',
-     y='Max Deceleration (m/s/s)',
-     size='Top Speed (m/s)',
-     color='Player Name').interactive()
-'''
-## Max Acceleration vs Deceleration
-'''
-st.altair_chart(chart, theme="streamlit", use_container_width=True)
+if uploaded_file is not None:
+    chart = alt.Chart(dataframe).mark_circle().encode(
+        x='Max Acceleration (m/s/s)',
+        y='Max Deceleration (m/s/s)',
+        size='Top Speed (m/s)',
+        color='Player Name').interactive()
+    '''
+    ## Max Acceleration vs Deceleration
+    '''
+    st.altair_chart(chart, theme="streamlit", use_container_width=True)
