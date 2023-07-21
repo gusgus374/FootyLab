@@ -37,7 +37,7 @@ with st.container():
              st.write("Consistency is key to so much in life!")
 
 
-st.components.v1.iframe('https://oneapp.catapultsports.com/#/sessions', height=800, scrolling=True)
+st.components.v1.iframe('https://oneapp.catapultsports.com/', height=800, scrolling=True)
 #st.components.v1.iframe('')
 with st.sidebar:
     st.header("Meet your coach!")
