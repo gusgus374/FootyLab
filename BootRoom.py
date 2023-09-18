@@ -9,7 +9,7 @@ from itscalledsoccer.client import AmericanSoccerAnalysis
 import os
 import pathlib
 from scipy import stats
-from mplsoccer import PyPizza, FontManager
+#from mplsoccer import PyPizza, FontManager
 import streamlit as st
 from PIL import Image
 import altair as alt
