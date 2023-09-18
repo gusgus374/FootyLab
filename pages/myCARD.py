@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from mplsoccer import Sbopen, Pitch
+#from mplsoccer import Sbopen, Pitch
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from matplotlib import colors
